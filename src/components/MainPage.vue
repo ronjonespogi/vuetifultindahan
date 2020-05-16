@@ -5,7 +5,7 @@
             <v-col cols="3">
                 <v-hover v-slot:default="{ hover }">
                     <v-card class="mx-auto" color="grey lighten-4" max-width="600">
-                    <v-img :aspect-ratio="16/9" :src="products[0].image">
+                    <v-img :aspect-ratio="16/9" :src="products[0].image" contain @click.stop="dialog1 = true">
                         <v-expand-transition>
                         <div v-if="hover" class="d-flex transition-fast-in-fast-out orange darken-2 v-card--reveal display-3 white--text" style="height: 100%;">
                             {{ products[0].price }}
@@ -32,27 +32,30 @@
                     <v-card>                       
                         <v-carousel>
                             <v-carousel-item
-                            v-for="(item,i) in products[0].images"
-                            :key="i"
-                            :src="item.src"
-                            reverse-transition="fade-transition"
-                            transition="fade-transition"
-                            ></v-carousel-item>
+                                v-for="(item,i) in products[0].images"
+                                :key="i"
+                                :src="item.src"
+                                contain
+                                reverse-transition="fade-transition"
+                                transition="fade-transition"
+                            >
+                            <div class="text-center" style="background-color: lightyellow">
+                                <h5>{{item.explanation}}</h5> 
+                            </div>
+
+                            </v-carousel-item>
+
                         </v-carousel>
 
-
                         <v-card-text>
-                        Let Google help apps determine location. This means sending anonymous location data to Google, even when no apps are running.
+                            
                         </v-card-text>
 
                         <v-card-actions>
                         <v-spacer></v-spacer>
                         </v-card-actions>
                     </v-card>
-                    </v-dialog>
-
-
-
+                </v-dialog>
             </v-col>      
 
         </v-row>
@@ -63,6 +66,8 @@
 
 
 <script>
+
+
 export default {
     name: 'MainPage',
     data() {
@@ -80,16 +85,28 @@ export default {
                     image: "/images/laptopstand_4.jpg",
                     images: [
                         {
-                            src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg',
+                            src: '/images/laptopstand_1.jpg',
+                            explanation: 'Prevents your laptop from slipping through by its rubber stoppers.'
                         },
                         {
-                            src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg',
+                            src: '/images/laptopstand_2.jpg',
+                            explanation: 'Lets your laptop exhaust freely',
                         },
                         {
-                            src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg',
+                            src: '/images/laptopstand_3.jpg',
+                            explanation: 'The Aluminum Laptop Holder can become so compact and lightweight and you can bright it from home to work vice versa.'
                         },
                         {
-                            src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg',
+                            src: '/images/laptopstand_4.jpg',
+                            explanation: 'Made from pure aluminum, lightweigth, elegant and compact. Perfect for everyday use.'
+                        },
+                        {
+                            src: '/images/laptopstand_5.jpg',
+                            explanation: 'Can be used on anything that needs elevation.'
+                        },
+                        {
+                            src: '/images/laptopstand_6.jpg',
+                            explanation: 'Promotes good posture and prevents you from back pains and neck pains after long hours of work.'
                         },
                     ],
                 },

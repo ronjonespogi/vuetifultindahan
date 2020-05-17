@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const apiUrl = "http://localhost:8000";
+//const apiUrl = "http://localhost:8000";
+const apiUrl = "http://54.179.119.236";
 
 const state = {
     user: {},

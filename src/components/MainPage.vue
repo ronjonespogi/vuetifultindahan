@@ -229,7 +229,99 @@ export default {
                         },
                     ],
                 },
-                
+                { 
+                    id: 5,
+                    dialog: false,
+                    name: "3 in 1 USB Fast Charger with Easyfix",
+                    shorty: "You don't need more cables!",
+                    description: "You only need 1 USB Charging Cable for your 3 kinds of devices!",
+                    price: "Php 289.00",
+                    image: "/images/ucable_1.jpg",
+                    images: [
+                        {
+                            src: '/images/ucable_2.jpg',
+                            explanation: ''
+                        },
+                        {
+                            src: '/images/ucable_1.jpg',
+                            explanation: '',
+                        },
+                        {
+                            src: '/images/ucable_3.jpg',
+                            explanation: ''
+                        },
+                        {
+                            src: '/images/wirelesscharger_4.jpg',
+                            explanation: ''
+                        },
+                        {
+                            src: '/images/ucable_5.jpg',
+                            explanation: ''
+                        },
+                    ],
+                },
+                { 
+                    id: 6,
+                    dialog: false,
+                    name: "Real Noise Cancellation USB Call Center Headset",
+                    shorty: "NO BS! Just real noise cancellation!",
+                    description: "Good Quality Sound Stereo Headsets with Noise Cancellation Microphone for Clean calls even with noisy environment.",
+                    price: "Php 1,699.00",
+                    image: "/images/callcenter_1.jpg",
+                    images: [
+                        {
+                            src: '/images/callcenter_2.jpg',
+                            explanation: ''
+                        },
+                        {
+                            src: '/images/callcenter_1.jpg',
+                            explanation: ''
+                        },
+                        {
+                            src: '/images/callcenter_3.jpg',
+                            explanation: '',
+                        },
+                        {
+                            src: '/images/binaurial_1.jpg',
+                            explanation: ''
+                        },
+                        {
+                            src: '/images/binaurial_2.jpg',
+                            explanation: ''
+                        }
+                    ],
+                },
+                { 
+                    id: 7,
+                    dialog: false,
+                    name: "Durable 2.5' Colorless Enclosure for External HDD/SSD",
+                    shorty: "Have extra Hard Drives? Use it!",
+                    description: "Use your spare Hard Drives by putting it inside this 2.5 inches External Colorless Enclosure. ",
+                    price: "Php 599.00",
+                    image: "/images/hdd_1.jpg",
+                    images: [
+                        {
+                            src: '/images/hdd_2.jpg',
+                            explanation: ''
+                        },
+                        {
+                            src: '/images/hdd_3.jpg',
+                            explanation: ''
+                        },
+                        {
+                            src: '/images/hdd_4.jpg',
+                            explanation: '',
+                        },
+                        {
+                            src: '/images/hdd_5.jpg',
+                            explanation: ''
+                        },
+                        {
+                            src: '/images/hdd_1.jpg',
+                            explanation: ''
+                        },
+                    ],
+                },
                 
             ]
         }

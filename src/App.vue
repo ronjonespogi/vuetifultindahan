@@ -8,7 +8,7 @@
 
       <v-btn class="ma-2" text to="/">Home</v-btn>
       <v-btn class="ma-2" text to="/about">About</v-btn>
-      <v-btn class="ma-2" text to="/contact">Contact</v-btn>
+      <!-- <v-btn class="ma-2" text to="/contact">Contact</v-btn> -->
       
 
       <v-spacer></v-spacer>

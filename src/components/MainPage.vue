@@ -1,8 +1,8 @@
 
 <template>
-  <v-container class="fill-height" fluid style="min-height: 434px" >
+  <v-container fluid>
         <v-row class="ml-4 mr-4">  
-            <v-col v-for="product in products" :key="product.id" cols="3">
+            <v-col v-for="product in products" :key="product.id" cols="lg-3 md-6 sm-12 ">
                 <v-hover v-slot:default="{ hover }">
                     <v-card class="mx-auto" color="grey lighten-4" max-width="600">
                     <v-img :aspect-ratio="16/9" :src="product.image" contain @click.stop="dialog1 = true">

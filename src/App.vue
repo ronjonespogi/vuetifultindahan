@@ -12,8 +12,8 @@
       
 
       <v-spacer></v-spacer>
-      <v-btn v-if="!loggedIn" class="ma-2" text to="/login">Login</v-btn>
-      
+      <!-- <v-btn v-if="!loggedIn" class="ma-2" text to="/login">Login</v-btn> -->
+<!--       
       <v-menu v-else bottom left>
         <template v-slot:activator="{ on }">
           <v-btn dark icon v-on="on">
@@ -22,10 +22,10 @@
         </template>
 
         <v-list>
-          <v-list-item @click="loadUserProfile">{{ loggedUser.name }} </v-list-item>
+          <v-list-item to="/dashboard">{{ loggedUser.name }} </v-list-item>
           <v-list-item @click="logout">Logout </v-list-item>
         </v-list>
-      </v-menu>
+      </v-menu> -->
     </v-app-bar>
 
     <v-content>      
